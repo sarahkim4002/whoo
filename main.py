@@ -14,11 +14,11 @@ def main():
         print("3. Quit")
         option = input("Please enter an option: ")
         if option == "1":
-            value = input("Please enter your password to encode: ")
-            print("Encoded password is", encode(value))
+            value = encode(input("Please enter your password to encode: "))
+            print("Your password has been encoded and stored!")
+            print()
         elif option == "2":
-            value = input("Enter an already encoded 8-digit password: ")
-            print("Decoded password is", decode(value))
+            print("The encoded password is {password}, and the original password is {decode(password)}")
         elif option == "3":
             break
         else:
