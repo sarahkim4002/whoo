@@ -5,6 +5,13 @@ def encode(password):
         new_pass += number_new
     return new_pass
 
+def decode(password):
+    new_pass = ''
+    for number in password:
+        number_new = str((int(number) - 3) % 10)
+        new_pass += number_new
+    return new_pass
+
 def main():
     while True:
         print("Menu")
